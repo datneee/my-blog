@@ -1,0 +1,67 @@
+.wrapper {
+    width: 30%;
+    .inner-sideBar {
+        width: 100%;
+        padding: 20px 0 26px 0;
+
+        .menu {
+            width: 100%;
+
+            .menu-header {
+                cursor: pointer;
+                font-size: 1.8rem;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+            .menu-list {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 4px;
+
+                .menu-list__item {
+                    list-style-type: none;
+                    width: 100%;
+                    border-radius: 4px;
+
+                    .menu-list__item--link {
+                        text-decoration: none;
+
+                        .menu-list__item--img {
+                            width: 100%;
+
+                            img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: contain;
+                            }
+                        }
+                        .menu-list__item--content {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            align-items: center;
+
+                            h3 {
+                                font-size: 1.8rem;
+                                color: var(--black);
+                            }
+                            p {
+                                font-size: 1.2rem;
+                                color: var(--black);
+                                word-wrap: break-word;
+                                white-space: normal;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                text-overflow: ellipsis;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
